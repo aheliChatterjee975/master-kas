@@ -81,3 +81,51 @@ h1{
 .banner-content p{
     margin-bottom: 20px;
 }
+section{
+    padding: 40px 0px;
+}
+.about-content-wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+}
+.about-content strong{
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.about-content h2{
+margin-bottom:  20px;
+}
+.about-content p{
+    margin-bottom: 20px;
+}
+.about-content ul{
+    margin-bottom: 20px;
+}
+.about-content ul li::before{
+     content: '✓'; /* Unicode character for a check mark (U+2713) */
+  /* Alternative: content: '\2713'; */
+  /* Alternative: content: '✔'; (heavier checkmark U+2705 ✅) */
+  color: green; /* Sets the color of the tick mark */
+  display: inline-block;
+  width: 1em; /* Ensures consistent spacing */
+  margin-left: -1em; /* Pulls the tick mark back into the padding area */
+}
+footer{
+   background-color: blanchedalmond;
+   padding: 30px 0; 
+}
+.social-list img{
+    width: 30px;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.footer-list strong{
+    display: block;
+    margin-bottom: 10px;
+}
