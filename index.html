@@ -5,6 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Master Kas</title>
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -168,6 +192,120 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div class="container">
+                <div class="reviews-content">
+                    <div class="review-header">
+                        <h2>What our clients say</h2>
+                        <p>
+                            Real experiences from real people
+                        </p>
+                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="ratings">
+                                    <img src="images/full-star.png">
+                                    <img src="images/full-star.png">
+                                    <img src="images/full-star.png">
+                                    <img src="images/full-star.png">
+                                    <img src="images/full-star.png">
+                                </div>
+                                <div class="review-body">
+                                    <p>
+                                        I contracted Kas for my new construction home. Kas transformed my house into
+                                        heaven.
+                                        He made sure every single job he did came out Topnotch. Not to talk of the new
+                                        construction Bathroom he did was breathtaking.
+                                    </p>
+
+                                    <ul>
+                                        <li>
+                                            His Approach to details
+                                        </li>
+                                        <li>
+                                            He makes sure your house is covered properly before starting any job
+                                        </li>
+                                        <li>
+                                            With Kas you get Quality and he is very very Affordable. Getting value for
+                                            your
+                                            money no matter the little cost he charges you.
+                                        </li>
+                                        <li>
+                                            Kas you deserve more than a 5 Star ⭐️
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        Thank you for transforming my House into a Home .
+                                    </p>
+                                    <p>
+                                        Taking all my projects like it’s your house .
+                                    </p>
+
+                                    <p>
+                                        Guys from my
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <strong>Bathroom</strong>
+                                        </li>
+                                        <li>
+                                            My Chandeliers
+                                        </li>
+                                        <li>
+                                            My Accent Wall
+                                        </li>
+                                        <li>
+                                            Repainting
+                                        </li>
+                                        <li>
+                                            My Curtains and Drapes
+                                        </li>
+                                        <li>
+                                            My huge wall Frames
+                                        </li>
+                                        <li>
+                                            My Walk in closet
+                                        </li>
+
+                                    </ul>
+                                    <p>
+                                        And many more !!!!!
+                                    </p>
+                                    <p>
+                                        5Star 💯
+                                    </p>
+                                </div>
+                                <div class="client">
+                                    <h3>
+                                        Miriam i.
+                                    </h3>
+                                    <p>
+                                        <span>
+                                            Jun 13, 2025
+                                        </span>
+                                        •
+                                        <span>
+                                            Hired on Thumbtack
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                            <div class="swiper-slide">Slide 4</div>
+                            <div class="swiper-slide">Slide 5</div>
+                            <div class="swiper-slide">Slide 6</div>
+                            <div class="swiper-slide">Slide 7</div>
+                            <div class="swiper-slide">Slide 8</div>
+                            <div class="swiper-slide">Slide 9</div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
     <footer>
         <div class="container">
@@ -275,6 +413,16 @@
             </div>
         </div>
     </footer>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>

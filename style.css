@@ -173,6 +173,33 @@ margin-bottom:  20px;
   width: 1em; /* Ensures consistent spacing */
   margin-left: -1em; /* Pulls the tick mark back into the padding area */
 }
+.reviews-content ul{
+    list-style: disc;
+    padding-left: 20px;
+}
+.review-header{
+    margin-bottom: 20px;
+}
+.reviews-content{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.ratings{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.review-body{
+    text-align: left;
+}
+.review-body * {
+    margin-bottom: 15px;
+}
+.ratings img{
+    width: 20px;
+}
+
 footer{
    background-color: var(--bg-footer);
    color: var(--text-span-muted);
